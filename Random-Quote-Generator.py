@@ -1,6 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 import requests
-import time
 
 
 # Get Random Quote Function
@@ -25,6 +24,13 @@ def home_page():
     return render_template('index.html', quote=quote)
 
 
+# New Quote Route
+@quote_gen_site.route("/get_new_quote", methods=["POST"])
+def get_new_quote():
+    global quote
+    quote = get_random_quote()
+    return redirect(url_for('home_page'))
+
+
 if __name__ == "__main__":
     quote_gen_site.run(debug=True)
-    time.sleep(1)
