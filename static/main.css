@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    background-color: #191919; 
+    font-family: 'Nanum Gothic Coding', monospace;  
+  }
+
+.title {
+    margin-bottom: 100px;
+}
+
+.container{
+    margin-left: 450px;
+    border: 10px outset rgb(255, 255, 255);
+    border-radius: 50px; 
+    text-align: center;
+    border: 2px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.quote {
+    font-size: 40px;
+}
+
+.refresh_button {
+    font-size: 22px;
+    margin-top: 50px;
+}
