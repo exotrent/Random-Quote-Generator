@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Random Quote Generator</title>
-    <meta http-equiv="refresh" content="10">
+    <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
-<h1>{{ quote }}</h1>
+<h1 class="title">Random Quote Generator ¯\_(ツ)_/¯</h1>
+<div class="container">
+    <h2 class="quote anim-typewriter">{{ quote }}</h2>
+</div>
+<form method="post" action="{{ url_for('get_new_quote') }}">
+    <button type="submit" class="refresh_button">New Quote</button>
+</form>
 </body>
 </html>
