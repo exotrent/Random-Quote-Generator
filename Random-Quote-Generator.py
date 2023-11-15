@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, redirect, url_for
 import requests
 
 
@@ -33,4 +33,4 @@ def get_new_quote():
 
 
 if __name__ == "__main__":
-    quote_gen_site.run(debug=True)
+    quote_gen_site.run()

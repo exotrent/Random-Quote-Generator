@@ -29,3 +29,14 @@ body{
     font-size: 22px;
     margin-top: 50px;
 }
+
+.text{
+    margin-top: 200px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.text:hover {
+    transition: 1s;
+    font-size: 25px;
+}
