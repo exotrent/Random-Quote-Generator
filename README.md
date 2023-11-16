@@ -26,6 +26,7 @@ This Random Quote Generator is a small web application that provides users with 
 
 - Python 3.x
 - Flask
+- Requests
 
 ## Installation
 
